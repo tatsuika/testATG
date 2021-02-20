@@ -1,0 +1,7 @@
+version: '3' # composeファイルのバーション指定
+services:
+  go: # service名
+    build: ./go
+    tty: true # コンテナの起動永続化
+    volumes:
+      - ./go:/go/src/work # マウントディレクトリ指定
